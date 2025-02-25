@@ -6,4 +6,21 @@ Curve's current treasury consists of $15m in CRV tokens. All protocol revenue is
 
 ### State of the Curve DAO Treasury
 
-Curve has no formal treasury to speak of. The closest equivalent is the community fund, 
+Curve has no formal treasury to speak of. The closest equivalent is the [community fund](https://etherscan.io/address/0xe3997288987e6297ad550a69b31439504f513267), which was originally seeded with [151,515,151 CRV back in 2020](https://gov.curve.fi/t/scip-2-utilizing-the-community-fund/967). A part of this fund was later allocated to the grant council 
+
+
+
+3.6m CRV
+https://curvemonitor.com/dao/proposal/ownership/30
+24m CRV
+https://etherscan.io/tx/0xd8162f097998153903c9a28c960de269deabae8b6497a7c9a3378b6f9e71c8ad
+
+reimbursement
+
+4.5m CRV
+https://curvemonitor.com/dao/proposal/ownership/593
+71m CRV
+https://curvemonitor.com/dao/proposal/ownership/521
+
+21m CRV to Swiss Stake
+https://curvemonitor.com/dao/proposal/ownership/828
