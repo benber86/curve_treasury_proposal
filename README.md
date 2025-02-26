@@ -24,3 +24,5 @@ https://curvemonitor.com/dao/proposal/ownership/521
 
 21m CRV to Swiss Stake
 https://curvemonitor.com/dao/proposal/ownership/828
+
+
