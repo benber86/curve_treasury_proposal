@@ -55,7 +55,7 @@ A [recent DAO proposal](https://curvemonitor.com/dao/proposal/parameter/90) rais
 
 Recent changes to the pool's parameters ([higher A](https://curvemonitor.com/dao/proposal/parameter/90) and [higher trading fee](https://curvemonitor.com/dao/proposal/parameter/91)), are also projected to increase revenue. While the changes are too recent to draw any definitive conclusion, the preliminary data is encouraging:
 
-![image](https://github.com/user-attachments/assets/79000df4-699c-4db8-8a09-eb02c145ecc9)
+![image](https://github.com/user-attachments/assets/619f6de7-fd40-4fba-9565-9443517d9828)
 
 
 While a set of special circumstances make the 3pool an ideal candidate for this strategy, other pools could be targeted. For instance, to nudge LPs to migration out of obsolete pools, the fees could likewise be increased 100% to the benefit of the DAO and redirected towards the treasury. Or future pools could be deployed that split the 50% admin fee share between veCRV and the treasury.
