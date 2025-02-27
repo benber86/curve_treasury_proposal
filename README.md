@@ -48,6 +48,8 @@ This has the advantage of diversifying the treasury as fees will be paid either 
 
 ### Overview
 
+**Directing all fees from 3pool to the treasury via a new proxy owner contract would cover the majority of the protocol's expenses, but would rely entirely on a single pool and its largest LP.**
+
 A [recent DAO proposal](https://curvemonitor.com/dao/proposal/parameter/90) raised the [3pool](https://etherscan.io/address/0xeCb456EA5365865EbAb8a2661B0c503410e9B347)'s admin fees to 100% meaning that all of its trading fees now redistributed to veCRV. The 3pool is one of the highest earning pools on Curve and its revenue alone would cover most of the protocol's operating expenses:
 
 ![image](https://github.com/user-attachments/assets/b34dcb56-d19b-4dd6-b163-0f03c165989d)
