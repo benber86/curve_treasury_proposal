@@ -71,8 +71,13 @@ For 3pool specifically, 2 proposals will be needed, one to `commit_transfer_owne
 | Pros | Cons |
 |------|------|
 | • Relatively painless for veCRV holders, as half of funding will come from revenue previously redistributed to LPs | • Risky and unsustainable: treasury will depend on fees from a single pool with one major LP rather than benefit from overall protocol growth |
-| • Flexible: can redirect part of the fees on targeted individual pools or pool types | • If other pools are added after 3pool, will need to handle burning as fees will be paid in LP tokens |
+| • Flexible: can redirect part of the fees on targeted individual pools or pool types | • If other pools are added after 3pool, will need to handle burning as fees will be paid in LP tokens | <- mk: this is small argument, as we have a fee burner for this and this is running and well tested
 
+mk: 
+
+* In fact this could be a good way to force migration from old pools to new pools, so it has addional benefits: BUT 1) need somebody to make decisions 2) results in even more votes for Curve DAO 
+* What I miss here, is that in fact crvUSD is the cash cow of curve, as we only take from the AMM side here. If crvUSD finds more traction, we miss the upside of crvUSD, as we only focus on the AMM side.
+* Downside of this is also that we have to "milk" pools, which at some point can get unsustainable and maybe damage LP providers and lead to outflow. So at the end we need to do Strategy #2 anyway.
 
 ## Strategy #2: Take a 10% cut of all DAO revenue
 
@@ -98,6 +103,10 @@ This strategy would likewise use a [FeeSplitter](https://github.com/curvefi/fee-
 | • Protocol treasury grows proportionally to overall protocol revenue | • Less flexible as we can't target specific pools or products |
 | • Burning already handled, treasury accumulates crvUSD  | |
 
+mk: 
+
+* I think this is the way better way. At the end we just kicking the can here. If we run out of founds, this is anyway what is going to happen. The 21M SS funding and the poltical process partly lead by me showed that at the end stakeholders have  no choice, either fund ongoing development & services or the project and token is done. BUT: I fear some players are in denial about this, this will find resistance.
+* What we maybe can do, is boil the frog, not go from 0->10% in one go, but maybe scale that up over 6 month. It is the same end result, but market wise, on the reflection of CRV, this would be better. Maybe the amount we take could be adjusted to the cycles, so take more % during bull and less during bear. But not sure how to implement this? I could be tied to the USD lending rate? crvUSD?  But how to normalize.. 
 
 # Final Destination of Funds
 
