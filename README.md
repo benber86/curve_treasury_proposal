@@ -114,5 +114,5 @@ This has the following advantages:
 - This proposal is **NOT** meant to start a debate on how to allocate the funds (Swiss Stake, grant council, autobribes, etc.)
 
   
-While these are potentially interesting discussion topics, they are only worth discussing if the DAO has money. The DAO currently has no money. Let's keep the discussion focused on ways the DAO can start making money.
+While these are potentially interesting discussion topics, they are only worth discussing if the DAO has money. **The DAO currently has no money.** Let's keep the discussion focused on ways the DAO can start making money.
 
