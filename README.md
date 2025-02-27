@@ -41,7 +41,7 @@ Companies do not typically redistribute revenue to shareholders in the early yea
 
 **The DAO can start accumulating a treasury by either taking a larger cut of the yield of certain DEX pools or a small cut of the distributed fees**. 
 
-This has the advantage of diversifying the treasury as fees will be paid either in yield bearing LP tokens or in crvUSD.
+This has the advantage of diversifying the treasury beyond CRV, as fees will be paid either in yield bearing LP tokens or in crvUSD.
 
 ## Strategy #1: Redirect Fees of Selected Target Pools, Starting with 3pool
 
