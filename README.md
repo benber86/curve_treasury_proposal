@@ -2,7 +2,7 @@
 
 # Summary
 
-Curve's current "treasury" consists of USD $16m in CRV tokens. All protocol revenue is currently redistributed to LPs, veCRV and scrvUSD and there are no mechanism to grow the treasury. This is not sustainable in the middle to long term. Currently, the only way to cover the costs of maintaining and growing the protocol (payroll, audits, services, etc.) is by selling this limited amount of CRV. The amount would only cover ~3 years of expenses at the current estimated burn rate. This proposal introduces two mechanisms to redirect a part of protocols fees towards a treasury:
+Curve's current "treasury" consists of USD $16m in CRV tokens. All protocol revenue is currently redistributed to LPs, veCRV and scrvUSD and there are no mechanism to grow the treasury. This is not sustainable in the middle to long term. Currently, the only way to cover the costs of maintaining and growing the protocol (payroll, audits, services, etc.) is by selling this limited amount of CRV. The amount would only cover ~3 years of expenses at the current estimated burn rate and CRV price. This proposal introduces two mechanisms to redirect a part of protocols fees towards a treasury:
 1. Redirect all of 3pool revenue to the community fund
 2. Redirect 10% of veCRV fees to the community fund
 
@@ -24,18 +24,18 @@ While **the situation requires urgent action**, it is far from being critical as
 
 **The DAO has generated over $40m in revenue in 2024 and is on track to reach a similar amount in 2025. Basic operating costs represent only ~10% of this amount.**
 
-While Curve's revenue fluctuates with the fortunes of the crypto market, the protocol generated over $40m in fees in 2024. Fees for the first two months of 2025 amount to ~$5.4m, which, with a crude projection, should get us above 35m this year. A typical startup's operating expenses account for 60 to 90% of revenue, for Curve it is only about 10%.
+While Curve's revenue fluctuates with the fortunes of the crypto market, the protocol generated over $40m in fees in 2024. Fees for the first two months of 2025 amount to ~$5.4m, which, with a crude projection, should get us above $35m this year. A typical startup's operating expenses account for 60 to 90% of revenue, for Curve it is only about 10%. The protocol is lean, but is also underspending on sustaining its growth.
 
 ![image](https://github.com/user-attachments/assets/2ca90228-01e9-41d5-8b39-d51a3bcc081b)
 
 
-If the money is not used to cover the protocol's operating expenses, where does it all go? In short, veCRV. A baffling 70% of the DAO revenue is redirected towards governance token stakers:
+If the revenue is not used to cover the protocol's growth and operating expenses, where does it all go? In short, veCRV. A baffling 70% of the DAO revenue is redirected towards governance token stakers:
 
 ![image](https://github.com/user-attachments/assets/356571d5-9065-49e5-8c71-3522aa3cacdb)
 
 This is capital that could be reinvested in development, security and marketing but instead goes to reward stakeholders who, since the rise of liquid wrappers, lack long-term incentives to steward the protocol's growth. That is not to say that veCRV provides no value to the protocol, but this situation is akin to a four-year-old startup allocating 70% of its revenue to dividends. 
 
-Companies do not typically redistribute revenue in the early years of their lifecycle, and if they do, the [median dividend payout ratio](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/divfund.html) for tech companies is below 15%, 5 times less than what the DAO currently pays out. It's also worth noting that while early contributors to the protocol received a sizeable CRV allocation they could lock to receive yield, the composition of the core team and other contributors has almost entirely changed since the early days of the protocol. Almost none of the current contributors have a veCRV position sizeable enough to generate sustainable income from yield. 
+Companies do not typically redistribute revenue to shareholders in the early years of their lifecycle. When tech companies do give dividends, the [median dividend payout ratio](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/divfund.html) is below 15%, 5 times less than what the DAO currently pays out. It's also worth noting that while early contributors to the protocol received a sizeable CRV allocation they could lock to receive yield, the composition of the core team and other contributors has entirely changed since the early days of the protocol. Almost none of the current contributors have a veCRV position sizeable enough to generate sustainable income from yield. 
 
 # Treasury Accumulation Strategies
 
@@ -58,13 +58,13 @@ Recent changes to the pool's parameters ([higher A](https://curvemonitor.com/dao
 ![image](https://github.com/user-attachments/assets/79000df4-699c-4db8-8a09-eb02c145ecc9)
 
 
-While a set of special circumstances make the 3pool an ideal candidate for this strategy, other pools could be targeted. For instance, to incentivize migration, the fees on an obsolete pool could likewise be increased 100% to the benefit of the DAO and redirected towards the treasury. Or future pools could be deployed that split the 50% admin fee share between veCRV and the treasury.
+While a set of special circumstances make the 3pool an ideal candidate for this strategy, other pools could be targeted. For instance, to nudge LPs to migration out of obsolete pools, the fees could likewise be increased 100% to the benefit of the DAO and redirected towards the treasury. Or future pools could be deployed that split the 50% admin fee share between veCRV and the treasury.
 
 ### Deployment
 
-This strategy will require a contract akin to crvUSD's [FeeSplitter](https://github.com/curvefi/fee-splitter/blob/main/contracts/FeeSplitter.vy), but adapted to DEX pools and some of their specific characteristics. The contract for 3pool for instance would need to implement some ownership admin functions. Newer factory pools present another set of challenges as the fee_receiver is shared among all pools, but the contract could likewise act to reallocate fees between veCRV and the treasury. 
+This strategy will require a contract akin to crvUSD's [FeeSplitter](https://github.com/curvefi/fee-splitter/blob/main/contracts/FeeSplitter.vy), but adapted to DEX pools and some of their specific characteristics (the contract for 3pool, for instance, would need to implement some way to access ownership admin functions). Newer factory pools present another set of challenges as the fee_receiver is shared among all pools, but the contract could likewise act to reallocate fees between veCRV and the treasury. 
 
-For 3pool specifically, 2 proposals will be needed, one to `commit_transfer_ownership` and another to `apply_transfer_ownership`. 
+For 3pool specifically, 2 proposals will be needed, one to `commit_transfer_ownership` and another to `apply_transfer_ownership` to the new splitter contract. 
 
 ### Assessment
 
@@ -96,6 +96,7 @@ This strategy would likewise use a [FeeSplitter](https://github.com/curvefi/fee-
 |------|------|
 | • Straightforward and easy to keep track of as there is one single point for splitting (as opposed to potentially multiple individual pools for strategy #1) | • Direct impact on incentives: each percentage point of fees redirected causes an equivalent percentage reduction in veCRV APR |
 | • Protocol treasury grows proportionally to overall protocol revenue | • Less flexible as we can't target specific pools or products |
+| • Burning already handled, treasury accumulates crvUSD  | |
 
 
 # Final Destination of Funds
