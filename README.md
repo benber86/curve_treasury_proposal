@@ -56,7 +56,8 @@ A [recent DAO proposal](https://curvemonitor.com/dao/proposal/parameter/90) rais
 
 Recent changes to the pool's parameters ([higher A](https://curvemonitor.com/dao/proposal/parameter/90) and [higher trading fee](https://curvemonitor.com/dao/proposal/parameter/91)), are also projected to increase revenue. While the changes are too recent to draw any definitive conclusion, the preliminary data is encouraging:
 
-![image](https://github.com/user-attachments/assets/00cd4ce8-5adb-432e-8769-b1282a08c301)
+![image](https://github.com/user-attachments/assets/79000df4-699c-4db8-8a09-eb02c145ecc9)
+
 
 While a set of special circumstances make the 3pool an ideal candidate for this strategy, other pools could be targeted. For instance, to incentivize migration, the fees on an obsolete pool could likewise be increased 100% to the benefit of the DAO and redirected towards the treasury. Or future pools could be deployed that split the 50% admin fee share between veCRV and the treasury.
 
@@ -81,7 +82,9 @@ For 3pool specifically, 2 proposals will be needed, one to `commit_transfer_owne
 
 **The cut would be applied directly on all revenue distributed to veCRV for a small decrease of 40bps in APR**
 
-The DAO currently generates $40m in revenue and 10% of that would start to cover operational expenses. This strategy yields steady stablecoin revenue that would grow with the protocol's revenue. The cut would lower veCRV APR by an equivalent 10% which at current value is a small 40bps decrease. There is currently USD $438 million in the [veCRV contract](https://etherscan.io/address/0x5f3b5DfEb7B28CDbD7FAba78963EE202a494e2A2#code), and the last weekly fee distribution was $333,121. Discounting lock times, this gives an APR of 3.95% ($333,121 / $438,000,000 * 52). With a 10% lower fee distribution, the APR would have been 3.55% instead. As a significant of the yield for CRV now comes from bribes and additional token emissions or incentives from liquid staking protocols, this should not decrease CRV's attractiveness as a yield generating asset.
+The DAO currently generates $40m in revenue and 10% of that would start to cover operational expenses. This strategy yields steady stablecoin revenue that would grow with the protocol's revenue. The cut would lower veCRV APR by an equivalent 10% which at current value is a small 40bps decrease. 
+
+There is currently USD $438 million in the [veCRV contract](https://etherscan.io/address/0x5f3b5DfEb7B28CDbD7FAba78963EE202a494e2A2#code), and the last weekly fee distribution was $333,121. Discounting lock times, this gives an APR of 3.95% ($333,121 / $438,000,000 * 52). With a 10% lower fee distribution, the APR would have been 3.55% instead. As a significant of the yield for CRV now comes from bribes and additional token emissions or incentives from liquid staking protocols, this should not decrease CRV's attractiveness as a yield generating asset.
 
 
 ### Deployment
@@ -98,12 +101,18 @@ This strategy would likewise use a [FeeSplitter](https://github.com/curvefi/fee-
 
 # Final Destination of Funds
 
-All funds taken from the protocol's revenue will be redirected to the [community fund](https://etherscan.io/address/0xe3997288987e6297ad550a69b31439504f513267). This solution has a few advantages:
+**All funds taken from the protocol's revenue will be redirected to the [community fund](https://etherscan.io/address/0xe3997288987e6297ad550a69b31439504f513267).**
+
+This has the following advantages:
+- The DAO maintains control over the funds, and any allocation from the treasury will require DAO approval
+- The community fund has hitherto acted as an all-purpose money stash to pay for development, grants and insurance at the DAO's discretion. This flexibility and vagueness of purpose is a desirable feature.
 
 
+# What this proposal is NOT about
 
-## Please keep the discussion focused
 - This proposal is **NOT** meant to start a debate on treasury management (what assets to hold in the treasury, what yield strategies to use)
 - This proposal is **NOT** meant to start a debate on how to allocate the funds (Swiss Stake, grant council, autobribes, etc.)
+
+  
 While these are potentially interesting discussion topics, they are only worth discussing if the DAO has money. The DAO currently has no money. Let's keep the discussion focused on ways the DAO can start making money.
 
