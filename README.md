@@ -74,7 +74,32 @@ For 3pool specifically, 2 proposals will be needed, one to `commit_transfer_owne
 | • Flexible: can redirect part of the fees on targeted individual pools or pool types | • If other pools are added after 3pool, will need to handle burning as fees will be paid in LP tokens |
 
 
+## Strategy #2: Take a 10% cut of all DAO revenue
+
+
+### Overview
+
+**The cut would be applied directly on all revenue distributed to veCRV for a small decrease of 40bps in APR**
+
+The DAO currently generates $40m in revenue and 10% of that would start to cover operational expenses. This strategy yields steady stablecoin revenue that would grow with the protocol's revenue. The cut would lower veCRV APR by an equivalent 10% which at current value is a small 40bps decrease. There is currently USD $438 million in the [veCRV contract](https://etherscan.io/address/0x5f3b5DfEb7B28CDbD7FAba78963EE202a494e2A2#code), and the last weekly fee distribution was $333,121. Discounting lock times, this gives an APR of 3.95% ($333,121 / $438,000,000 * 52). With a 10% lower fee distribution, the APR would have been 3.55% instead. As a significant of the yield for CRV now comes from bribes and additional token emissions or incentives from liquid staking protocols, this should not decrease CRV's attractiveness as a yield generating asset.
+
+
+### Deployment
+
+This strategy would likewise use a [FeeSplitter](https://github.com/curvefi/fee-splitter/blob/main/contracts/FeeSplitter.vy) like contract which could be added as a hook to the Fee Collector's [Hooker](https://etherscan.io/address/0x9a9df35cd8e88565694ca6ad5093c236c7f6f69d#code) contract. The contract would then take a portion of fees already converted to crvUSD and forward the remainder to the usual fee distribution contract for veCRV. Updating the hookers will require a single proposal/vote by the DAO.
+
+### Assessment
+
+| Pros | Cons |
+|------|------|
+| • Straightforward and easy to keep track of as there is one single point for splitting (as opposed to potentially multiple individual pools for strategy #1) | • Direct impact on incentives: each percentage point of fees redirected causes an equivalent percentage reduction in veCRV APR |
+| • Protocol treasury grows proportionally to overall protocol revenue | • Less flexible as we can't target specific pools or products |
+
+
 # Final Destination of Funds
+
+All funds taken from the protocol's revenue will be redirected to the [community fund](https://etherscan.io/address/0xe3997288987e6297ad550a69b31439504f513267). This solution has a few advantages:
+
 
 
 ## Please keep the discussion focused
