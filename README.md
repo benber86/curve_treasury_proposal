@@ -72,6 +72,7 @@ For 3pool specifically, 2 proposals will be needed, one to `commit_transfer_owne
 |------|------|
 | • Relatively painless for veCRV holders, as half of funding will come from revenue previously redistributed to LPs | • Risky and unsustainable: treasury will depend on fees from a single pool with one major LP rather than benefit from overall protocol growth |
 | • Flexible: can redirect part of the fees on targeted individual pools or pool types | • If other pools are added after 3pool, will need to handle burning as fees will be paid in LP tokens |
+| | • Strategy is not exposed to the upside of crvUSD growth |
 
 
 ## Strategy #2: Take a 10% cut of all DAO revenue
@@ -97,6 +98,7 @@ This strategy would likewise use a [FeeSplitter](https://github.com/curvefi/fee-
 | • Straightforward and easy to keep track of as there is one single point for splitting (as opposed to potentially multiple individual pools for strategy #1) | • Direct impact on incentives: each percentage point of fees redirected causes an equivalent percentage reduction in veCRV APR |
 | • Protocol treasury grows proportionally to overall protocol revenue | • Less flexible as we can't target specific pools or products |
 | • Burning already handled, treasury accumulates crvUSD  | |
+| • The %age of the cut can easily be adjusted up or down  | |
 
 
 # Final Destination of Funds
