@@ -2,7 +2,7 @@
 
 # Summary
 
-Curve's current "treasury" consists of USD $16m in CRV tokens. All protocol revenue is currently redistributed to LPs, veCRV and scrvUSD and there are no mechanism to grow the treasury. This is not sustainable in the middle to long term. Currently, the only way to cover the costs of maintaining and growing the protocol (payroll, audits, services, etc.) is by selling this limited amount of CRV. The amount would only cover ~3 years of expenses at the current estimated burn rate and CRV price. This proposal introduces two mechanisms to redirect a part of protocols fees towards a treasury:
+Curve's current "treasury" consists of USD $16m in CRV tokens. All protocol revenue is currently redistributed to LPs, veCRV and scrvUSD and there are no mechanism to grow the treasury. This is not sustainable in the medium to long term. Currently, the only way to cover the costs of maintaining and growing the protocol (payroll, audits, services, etc.) is by selling this limited amount of CRV. The amount would only cover ~3 years of expenses at the current estimated burn rate and CRV price. To remedy this, this proposal introduces two mechanisms to redirect a part of protocols fees towards a treasury:
 1. Redirect all of 3pool revenue to the community fund
 2. Redirect 10% of veCRV fees to the community fund
 
@@ -55,7 +55,7 @@ A [recent DAO proposal](https://curvemonitor.com/dao/proposal/parameter/90) rais
 
 Recent changes to the pool's parameters ([higher A](https://curvemonitor.com/dao/proposal/parameter/90) and [higher trading fee](https://curvemonitor.com/dao/proposal/parameter/91)), are also projected to increase revenue. While the changes are too recent to draw any definitive conclusion, the preliminary data is encouraging:
 
-![image](https://github.com/user-attachments/assets/619f6de7-fd40-4fba-9565-9443517d9828)
+![image](https://github.com/user-attachments/assets/7063bb38-eea6-4f7f-8ca0-cf1f97af3fac)
 
 
 While a set of special circumstances make the 3pool an ideal candidate for this strategy, other pools could be targeted. For instance, to nudge LPs to migration out of obsolete pools, the fees could likewise be increased 100% to the benefit of the DAO and redirected towards the treasury. Or future pools could be deployed that split the 50% admin fee share between veCRV and the treasury.
