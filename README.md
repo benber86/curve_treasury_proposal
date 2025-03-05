@@ -26,7 +26,7 @@ While **the situation requires urgent action**, it is far from being critical as
 
 While Curve's revenue fluctuates with the fortunes of the crypto market, the protocol generated over $40m in fees in 2024. Fees for the first two months of 2025 amount to ~$5.4m, which, with a crude projection, should get us above $35m this year. A typical startup's operating expenses account for 60 to 90% of revenue, for Curve it is only about 10%. The protocol is lean, but is also underspending on sustaining its growth.
 
-![image](https://github.com/user-attachments/assets/2ca90228-01e9-41d5-8b39-d51a3bcc081b)
+![image](https://github.com/user-attachments/assets/bd3dea9f-05df-4762-8084-b37426146764)
 
 
 If the revenue is not used to cover the protocol's growth and operating expenses, where does it all go? In short, veCRV. A baffling 70% of the DAO revenue is redirected towards governance token stakers:
